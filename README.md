@@ -28,7 +28,7 @@ To
 ```
 
 ## Table of contents
-- [Why is was made](#why-it-was-made)
+- [Why it was made](#why-it-was-made)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Rendering an SVG](#rendering-an-svg)
