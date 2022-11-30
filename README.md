@@ -44,7 +44,7 @@ import { svgSpriteBuilder } from 'nuxt3-svg-sprite-builder';
 export default svgSpriteBuilder('./path/to/svg/folder');
 ```
 
-Edit `./path/to/svg/folder/` to match your SVG folder, default is `./assets/svg` if omitted.
+Edit `./path/to/svg/folder` to match your SVG folder, default is `./assets/svg` if omitted.
 
 ---
 
