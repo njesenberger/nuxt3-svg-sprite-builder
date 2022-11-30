@@ -106,8 +106,8 @@ Dynamic SVG component usage
 
 ## Credits
 
-- [@Lstmxx](https://github.com/Lstmxx) for creating [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) on which this module is based on
+- [@Lstmxx](https://github.com/Lstmxx) for creating [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) on which this module is based.
 
 ## License
 
-[MIt License](https://github.com/njsen/nuxt3-svg-sprite-builder/blob/main/LICENSE.md)
+[MIT License](https://github.com/njsen/nuxt3-svg-sprite-builder/blob/main/LICENSE.md)
