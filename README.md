@@ -49,6 +49,11 @@ Install module via npm:
 npm install nuxt3-svg-sprite-builder
 ```
 
+Install module via yarn:
+```bash
+yarn add nuxt3-svg-sprite-builder
+```
+
 Create `svgSpriteBuilder.js` into `/server/plugins` and add the following code:
 
 ```js
