@@ -73,7 +73,7 @@ defineProps({
 });
 </script>
 ```
-#### Dynamic component usage
+#### Dynamic SVG component usage
 ```vue
 <SvgComponent :href="dynamicValue" />
 ```
