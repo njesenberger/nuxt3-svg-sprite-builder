@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-svg-sprite-builder",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Nitro plugin to inject SVG sprite from SVG files into your HTML",
   "main": "main.js",
   "scripts": {
