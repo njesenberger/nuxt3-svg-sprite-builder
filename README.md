@@ -4,7 +4,7 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 
 > ⚠️ This is experimental and currently only provided for testing and feedback. Use at your own risk!
 
-#### From
+From
 
 ```
 📁 svg
@@ -15,7 +15,7 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 └  📄 logo.svg
 ```
 
-#### To
+To
 ```html
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;" aria-hidden="true">
@@ -27,7 +27,20 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 </body>
 ```
 
----
+## Table of contents
+- [Why is was made](#why-it-was-made)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Rendering an SVG](#rendering-an-svg)
+  - [Creating a dynamic SVG component](#creating-a-dynamic-svg-component)
+- [Credits](#credits)
+- [License](#license)
+
+## Why it was made
+
+- Popular modules like [JetBrains/svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader) do not support Vite as they are made for Webpack only.
+- Vite modules based on Vite's `transformIndexHtml` hook do not work as it is not supported in Nuxt 3 ([Issue #1711](https://github.com/nuxt/framework/pull/1711))
+- Most of modules bake in unwanted global components and require you to use them in order to use their module.
 
 ## Installation
 
@@ -45,8 +58,6 @@ export default svgSpriteBuilder('./path/to/svg/folder');
 ```
 
 Edit `./path/to/svg/folder` to match your SVG folder, default is `./assets/svg` if omitted.
-
----
 
 ## Usage
 
@@ -84,11 +95,15 @@ defineProps({
 });
 </script>
 ```
-#### Dynamic SVG component usage
+Dynamic SVG component usage
 ```vue
 <SvgComponent :href="dynamicValue" />
 ```
 
----
+## Credits
 
-Inspired by [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) from [@Lstmxx](https://github.com/Lstmxx)
+- [@Lstmxx](https://github.com/Lstmxx) for creating [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) on which this module is based on
+
+## License
+
+[MIt License](https://github.com/njsen/nuxt3-svg-sprite-builder/blob/main/LICENSE.md)
