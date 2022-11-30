@@ -84,3 +84,5 @@ defineProps({
 ```vue
 <SvgComponent :href="dynamicValue" />
 ```
+
+Inspired by [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) from [@Lstmxx](https://github.com/Lstmxx)
