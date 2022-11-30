@@ -27,6 +27,8 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 </body>
 ```
 
+---
+
 ## Installation
 
 Install module via npm:
@@ -43,6 +45,8 @@ export default svgSpriteBuilder('./path/to/svg/folder');
 ```
 
 Edit `./path/to/svg/folder/` to match your SVG folder, default is `./assets/svg` if omitted.
+
+---
 
 ## Usage
 
@@ -84,5 +88,7 @@ defineProps({
 ```vue
 <SvgComponent :href="dynamicValue" />
 ```
+
+---
 
 Inspired by [vite-svg-plugin](https://github.com/Lstmxx/vite-svg-plugin) from [@Lstmxx](https://github.com/Lstmxx)
