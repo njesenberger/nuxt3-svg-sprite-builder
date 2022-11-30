@@ -44,13 +44,12 @@ To
 
 ## Installation
 
-Install module via npm:
+Install module via npm or yarn:
 ```bash
+# npm
 npm install nuxt3-svg-sprite-builder
-```
 
-Install module via yarn:
-```bash
+# yarn
 yarn add nuxt3-svg-sprite-builder
 ```
 
