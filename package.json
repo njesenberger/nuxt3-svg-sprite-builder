@@ -20,7 +20,7 @@
     "icons"
   ],
   "author": "Nicolas Jesenberger",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/njsen/nuxt3-svg-sprite-builder/issues"
   },
