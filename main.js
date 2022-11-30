@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'fs';
 
-export default defineNitroPlugin((nitroApp) => {
-  const svgDirectory = './assets/svg/';
+export const svgSpriteBuilder = (svgDirectory = './assets/svg') => defineNitroPlugin((nitroApp) => {
+  svgDirectory = svgDirectory.replace(/\/?$/, '/');
 
   const isSvg = (fileName) => {
     return fileName.endsWith('.svg');

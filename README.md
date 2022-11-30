@@ -18,7 +18,7 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 #### To
 ```html
 <body>
-  <svg xmlns="xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;" aria-hidden="true" />
+  <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;" aria-hidden="true">
     <symbol id="icons/user" ...>...</symbol>
     <symbol id="illustrations/error" ...>...</symbol>
     <symbol id="logo" ...>...</symbol>
@@ -29,13 +29,20 @@ Nitro plugin to inject SVG sprite from SVG files into your HTML
 
 ## Installation
 
-- Place [svgSpriteBuilder.js](https://github.com/njsen/nuxt3-svg-sprite-builder/blob/main/svgSpriteBuilder.js) into `/server/plugins`, you can rename it as you wish.
-
-- Change `svgDirectory` value on `line 4` to match your SVG Directory, **__be careful to keep the trailing slash !__**
-```js
-// svgSpriteBuilder.js
-const svgDirectory = './assets/svg/'; // <-- Change this value
+Install module via npm:
+```bash
+npm install nuxt3-svg-sprite-builder
 ```
+
+Create `svgSpriteBuilder.js` into `/server/plugins` and add the following code:
+
+```js
+import { svgSpriteBuilder } from 'nuxt3-svg-sprite-builder';
+
+export default svgSpriteBuilder('./path/to/svg/folder');
+```
+
+Edit `./path/to/svg/folder/` to match your SVG folder, default is `./assets/svg` if omitted.
 
 ## Usage
 
