@@ -1,5 +1,5 @@
 # nuxt3-svg-sprite-builder
-Nitro plugin to inject SVG sprite from SVG files into HTML
+Nitro plugin to inject SVG sprite from SVG files into your HTML
 
 > ⚠️ This is experimental and currently only provided for testing and feedback. Use at your own risk!
 
